@@ -18,6 +18,6 @@ public class Main {
         sim1.chiamata("283957836283", 20);
         sim1.chiamata("902094857648", 10);
 
-        System.out.println(sim1.toString());
+        System.out.println(sim1.stampaDati());
     }
 }

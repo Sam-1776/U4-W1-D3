@@ -29,18 +29,10 @@ public class CardSim {
         }
     }
 
-    public int calcoloDurata(){
-        int tot = 0;
-        for (int i = 0; i < this.nC; i++) {
-            tot += T[i].getd();
-        }
-        return tot;
-    }
 
-    public String toString() {
-        String st="numero:"+ this.numero +" credito:"+ this.credito +"\n";
+    public String stampaDati() {
+        String st="numero:"+ this.numero +" credito:"+ this.credito + " N.chiamate:" + this.nC +"\n";
         for(int i=0;i < this.nC;i++)st+=T[i].getn()+" "+T[i].getd()+"\n";
-        System.out.println("Numero di chiamate dela SIM sono: " + this.nC);
         return st;
     }
 
